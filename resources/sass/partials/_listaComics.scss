@@ -1,3 +1,48 @@
+.contenitore-main{
+    width: 100%; 
+    background-color: $coloreBackgroundScuro;
+    position: relative;
+    .button-main-series{
+        button{
+           background-color: $coloreBlu;
+            color: $coloreBianco;
+            border: solid 2px $coloreBlu;
+            padding: 10px 30px;
+            font-size: 20px;
+            position: absolute;
+            top: -25px;
+            left: 270px;
+        }
+        
+    }
+    
+    .button-main-load{
+        display: flex;
+        justify-content: center;
+       button{
+            background-color: $coloreBlu;
+            color: $coloreBianco;
+            border: solid 2px $coloreBlu;
+            padding: 10px 30px;
+            margin-bottom: 20px;
+            
+            &:hover{
+                background-color: $coloreBluHover;
+                cursor: pointer;
+            }
+        } 
+    }
+    
+}
+.contenuto-main{
+    width: 70%;
+    margin: 0 auto;
+    min-height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    color: $coloreBianco; 
+}
+
 .banner{
     width: 15%;
     margin: 50px 10px;
