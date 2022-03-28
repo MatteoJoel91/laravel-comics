@@ -1,0 +1,117 @@
+@import "./variables";
+
+footer{
+    width: 100%;
+    background-color: $coloreBlu;
+    
+    .footer-up{
+        width: 70%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        z-index: 90;
+        position: relative;
+        .contenitore-cards{
+            display: flex;
+            align-items: center;
+            color: $coloreBianco;
+            margin: 0 30px;
+            padding: 0 5px;
+            &:hover{
+                cursor: pointer;
+                background-color: $coloreBluHover;
+                border-radius: 20px;
+            }
+        }
+        img{
+        width: 50px;
+        margin: 10px;
+        }
+    }
+}
+    
+    
+    
+.footer-mid{
+    width: 100%;
+    background-image: url('../../../public/img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    .logo-bg{
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+        img{
+            position: absolute;
+            right: 0px;
+            top: - 60px;
+            
+        }
+        .link-footer{
+            display: flex;
+            padding-top: 40px;
+            .collonna{
+                margin-right: 15px;
+            }
+            h3{
+                color: $coloreBianco;
+                margin: 15px 0px;
+            }
+            ul{
+                list-style-type: none;
+            }
+            li{
+                padding: 5px 0px;
+            }
+            a{
+                color: $coloreGrigio;
+                text-decoration: none;
+                &:hover{
+                    color: $coloreBlu;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.footer-bot{
+    width: 100%;
+    background-color: $coloregrigioScuro;
+    height: 100px;
+    z-index: 90;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    .contenitore-footer-bot{
+        width: 70%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        button{
+            background-color: $coloregrigioScuro;
+            color: $coloreBianco;
+            border: solid 2px $coloreBlu;
+            padding: 10px 10px;
+            &:hover{
+                background-color: $coloreGrigio;
+                cursor: pointer;
+            }
+        }
+        .social-footer{
+            display: flex;
+            align-items: center;
+            a{
+                color: $coloreBlu;
+                text-decoration: none;
+                margin-right: 10px;
+            }
+            img{
+                margin: 10px;
+            }
+        }
+        
+    }
+}
