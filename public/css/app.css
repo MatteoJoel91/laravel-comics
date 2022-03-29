@@ -177,7 +177,11 @@ footer .footer-up img {
 .contenitore-main {
   width: 100%;
   background-color: #1c1c1c;
+}
+
+.contenitore-main .button-main-series {
   position: relative;
+  width: 40%;
 }
 
 .contenitore-main .button-main-series button {
@@ -233,6 +237,15 @@ footer .footer-up img {
      object-position: top;
 }
 
+.banner a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner a:hover {
+  color: #0282f9;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -241,5 +254,113 @@ footer .footer-up img {
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.img-cont {
+  position: relative;
+  height: 70px;
+  background-color: #0282f9;
+}
+
+.img-cont img {
+  position: absolute;
+  bottom: 30%;
+  left: 15%;
+}
+
+.comic_info-top {
+  width: 70%;
+  margin: 40px auto;
+  display: flex;
+}
+
+.comic_info-top .row-left {
+  width: 70%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.comic_info-top .row-left .blocco {
+  display: flex;
+}
+
+.comic_info-top .row-left .blocco-verde {
+  width: 70%;
+  height: 40px;
+  background-color: #55ba59;
+  margin: 15px 0px;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  border: solid #9af999;
+  border-width: 0px 1px 1px 1px;
+}
+
+.comic_info-top .row-left .blocco-verde .text-verde {
+  color: #9af999;
+}
+
+.comic_info-top .row-left .blocco-verde .text-bianco {
+  color: white;
+}
+
+.comic_info-top .row-left .blocco-verde .text-right {
+  color: #9af999;
+}
+
+.comic_info-top .row-left .button {
+  display: flex;
+  width: 30%;
+}
+
+.comic_info-top .row-left .button button {
+  width: 100%;
+  height: 40px;
+  background-color: #55ba59;
+  margin: 15px 0px;
+  color: white;
+  border: solid #9af999;
+  border-width: 0px 1px 1px 0px;
+}
+
+.comic_info-top .row-right {
+  width: 25%;
+}
+
+.comic_info-bot {
+  width: 100%;
+  min-height: 300px;
+  background-color: #e2e2e2;
+}
+
+.comic_info-bot .tabelle {
+  width: 70%;
+  min-height: 300px;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.comic_info-bot .tabelle table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 0 30px;
+}
+
+.comic_info-bot .tabelle table th {
+  text-align: left;
+  padding: 5px 0px;
+}
+
+.comic_info-bot .tabelle table tr {
+  border-bottom: 1px solid black;
+}
+
+.comic_info-bot .tabelle table tr td {
+  padding: 10px 0px;
 }
 

@@ -9,10 +9,10 @@
     </div>
     <div class="contenuto-main">
 
-        @foreach ($fumetti as $fumetto)
+        @foreach ($fumetti as $key => $fumetto)
            <div class="banner">
                 <img src="{{$fumetto['thumb']}}" alt="">
-                <h3>{{$fumetto['series']}}</h3>
+                <a href="{{route('comic', ['comic_id' => $key])}}"><h3>{{$fumetto['series']}}</h3></a>
             </div>  
         @endforeach
                       

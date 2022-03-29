@@ -8,7 +8,16 @@
             <ul>
                 <li>
                     <a href="#">CHARACTERS</a>
-                    <a href="#" class="active">COMICS</a>
+
+                    <a class="
+                        @if (Request::route()->getName() == 'comics' || Request::route()->getName() == 'comic')
+                            active
+                        @endif
+                            "
+                        href="{{route('comics')}}">
+                        COMICS
+                    </a>
+
                     <a href="#">MOVIES</a>
                     <a href="#">TV</a>
                     <a href="#">GAMES</a>

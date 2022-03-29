@@ -1,10 +1,12 @@
 .contenitore-main{
     width: 100%; 
     background-color: $coloreBackgroundScuro;
-    position: relative;
+    
     .button-main-series{
+        position: relative;
+        width: 40%;
         button{
-           background-color: $coloreBlu;
+            background-color: $coloreBlu;
             color: $coloreBianco;
             border: solid 2px $coloreBlu;
             padding: 10px 30px;
@@ -46,11 +48,21 @@
 .banner{
     width: 15%;
     margin: 50px 10px;
+
     img{
         width: 100%;
         height: 170px;
         object-fit: cover;
         object-fit: cover;
         object-position: top;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+
+        &:hover{
+            color: $coloreBlu;
+        }
     }
 }
